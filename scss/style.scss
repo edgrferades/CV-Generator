@@ -1,4 +1,19 @@
-#h1{
-    background-color: black;
-    color: rgb(30, 255, 0);
+#inputTemplate{        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        text-align: center;
+        margin: 40px;
+
+        .input{
+        margin: 40px;
+        // text-align: center;
+
+        .myForm{
+            text-align: left;
+        }
+        }
+    }
 }
