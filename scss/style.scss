@@ -1,19 +1,47 @@
-#inputTemplate{        
+#inputTemplate {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    .container{
+    .container {
         text-align: center;
         margin: 40px;
 
-        .input{
-        margin: 40px;
-        // text-align: center;
+        .input {
+            margin: 40px;
+            // text-align: center;
 
-        .myForm{
+            .myForm {
+                text-align: left;
+            }
+
+            // .btn{
+            //     // border-radius: 50%;
+
+            // }
+        }
+    }
+}
+
+#outputTemplate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        text-align: center;
+        margin: 40px;
+
+        .objective{
             text-align: left;
         }
+
+        .experience, .education, .skills{
+            text-align: left;
+        }
+
+        .TitleNDes{
+            text-align: left;
         }
     }
 }

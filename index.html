@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>CV Generator</title>
-    <link rel="icon" type="image/png" href="" sizes="16x16">
+    <link rel="icon" type="image/png" href="photos/CVlogo.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -34,97 +34,151 @@
 
                         <form class="row g-3 myForm">
 
-                            <div class="col-md-12 col-lg-6">
-                                <label for="firstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="firstName">
+                            <div class="col-md-12 col-lg-6"><!-- First Name -->
+                                <label for="firstNameIn" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstNameIn">
                             </div>
 
-                            <div class="col-md-12 col-lg-6">
-                                <label for="lastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lastName">
+                            <div class="col-md-12 col-lg-6"><!-- Last Name -->
+                                <label for="lastNameIn" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastNameIn">
                             </div>
 
-                            <div class="col-md-12">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email">
+                            <div class="col-md-12"><!-- Email -->
+                                <label for="emailIn" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="emailIn">
                             </div>
                             
-                            <div>
-                                <label for="phoneNumber">Phone Number:</label>
-                                <input type="tel" class="form-control" id="phoneNumber">
+                            <div><!-- Phone Number -->
+                                <label for="phoneNumberIn">Phone Number:</label>
+                                <input type="tel" class="form-control" id="phoneNumberIn">
                             </div>
                               
-                            <div>
-                                <label for="linkedin">LinkedIn Profile:</label>
-                                <input type="url" class="form-control" id="phoneNumber">
+                            <div><!-- LinkedIn Profile -->
+                                <label for="linkedinIn">LinkedIn Profile:</label>
+                                <input type="url" class="form-control" id="linkedinIn">
                             </div>
 
-                            <div>
-                                <label for="objective" class="form-label">Objective</label>
-                                <textarea class="form-control" id="objective" rows="3"></textarea>
+                            <div><!-- Objective -->
+                                <label for="objectiveIn" class="form-label">Objective</label>
+                                <textarea class="form-control" id="objectiveIn" rows="3"></textarea>
                             </div>
 
-                            <div class="col-12">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+                            <div class="col-12"><!-- Address -->
+                                <label for="addressIn" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="addressIn" placeholder="1234 Main St">
                             </div>
 
-                            <div class="col-md-7">
-                                <label for="city" class="form-label">City</label>
-                                <input type="text" class="form-control" id="city">
+                            <div class="col-md-7"><!-- City -->
+                                <label for="cityIn" class="form-label">City</label>
+                                <input type="text" class="form-control" id="cityIn">
                             </div>
 
-                            <div class="col-md-5">
-                                <label for="postCode" class="form-label">Post code</label>
-                                <input type="text" class="form-control" id="postCode">
+                            <div class="col-md-5"><!-- Post code -->
+                                <label for="postCodeIn" class="form-label">Post code</label>
+                                <input type="text" class="form-control" id="postCodeIn">
                             </div>
                             
-                            <!-- <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Sign in</button>
-                            </div> -->
                         </form>
                         
                     </div><!-- Part left -->
 
                     <div class="col-md-6"><!-- Part right -->
                         <form class="row g-3 myForm">
+
                             <!-- Experience -->
-                            <div>
+                            <div id="experienceForm">
                                 <label for="experience" class="form-label">Experience</label>
-                                <input type="text" class="form-control mb-3" id="experience">
-                                <textarea class="form-control" id="experience" rows="3" placeholder="Job description"></textarea>
+                                <input type="text" class="form-control mb-3 experienceTitleIn" placeholder="Job title">
+                                <textarea class="form-control experienceDesIn" rows="3" placeholder="Job description"></textarea>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Add experience</button>
+                                <button type="button" class="btn btn-primary" id="addExperience">Add experience</button>
                             </div>
                             <!-- End Experience -->
 
                             <!-- Education -->
-                            <div>
-                                <label for="education" class="form-label">Education</label>
-                                <input type="text" class="form-control mb-3" id="education">
-                                <textarea class="form-control" id="education" rows="3" placeholder="Job description"></textarea>
+                            <div id="EducationForm"> 
+                                <label for="educationIn" class="form-label">Education</label>
+                                <input type="text" class="form-control mb-3 educationTitleIn" placeholder="Course title">
+                                <textarea class="form-control educationDesIn" rows="3" placeholder="Course description"></textarea>
                             </div>
+
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Add education</button>
+                                <button type="button" class="btn btn-primary" id="addEducation">Add education</button>
                             </div>
                             <!-- End Education -->
 
                             <!-- Skills -->
-                            <div>
-                                <label for="skills" class="form-label">Skills</label>
-                                <input type="text" class="form-control " id="Skills">
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Add skills</button>
-                            </div>
+                                <div id="skills">
+                                    <label for="skillsIn" class="form-label">Skills</label>
+                                    <input type="text" class="form-control mb-3 skillsIn" placeholder="Add a skill">
+                                </div>
+                            
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-primary" id="addSkills">Add Skills</button>
+                                </div>
                             <!-- End Skills -->
 
                         </form>
                     </div><!-- Part right -->
 
+                    <a href="#outputTemplate">
+                        <button type="button" class="btn btn-primary m-3" id="submitForm">Generate CV</button>
+                    </a>
+                    
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="outputTemplate">
+        <div class="container">
+
+            <div><!-- Part left -->
+                <div class="title">
+                    <h1><span id="firstNameOut">firstName</span> <span id="lastNameOut">lastName</span></h1>
+                </div>
+    
+                <div class="address">
+                    <p><span id="addressOut">1234 Main St</span>, <span id="cityOut">Sample City</span>, <span id="postCodeOut">AB1 23CD</span> | <span id="phoneNumberOut">01234567890</span></p>
+                </div>
+    
+                <div class="emailNLinkedIn">
+                    <p><span id="emailOut">something@some.co.uk</span> | <span id="linkedinOut">LinkedIn profile URL</span></p>
+                </div>
+    
+                <hr>
+    
+                <div class="objective">
+                    <p id="objectiveOut">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam commodi quasi voluptatibus vel dolorum obcaecati dolorem expedita illum laudantium aut ipsum optio excepturi dicta possimus provident, aliquam eveniet iusto explicabo, quibusdam est facilis molestias nemo neque ipsam! Perspiciatis, aut atque.</p>
+                </div>
+            </div><!-- End Part left -->
+
+            <div><!-- End Part right -->
+                <div class="experience">
+                    <h4>Experience</h4>
+                    <div class="container TitleNDes">
+                        <h6 class="experienceTitleOut">Experience title</h6>
+                        <p class="experienceDesOut">Experience description Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nisi a ex totam, recusandae ea perspiciatis iure eligendi quaerat rem et! Explicabo accusantium quidem, magni nisi ipsa eius voluptates sunt?</p>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <h4>Education</h4>
+                    <div class="container TitleNDes">
+                        <h6 class="educationTitleOut">Education title</h6>
+                        <p class="educationDesOut">Education description Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nisi a ex totam, recusandae ea perspiciatis iure eligendi quaerat rem et! Explicabo accusantium quidem, magni nisi ipsa eius voluptates sunt?</p>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <div class="container TitleNDes">
+                        <h6 class="skillsOut">Skill</h6>
+                    </div>
+                </div>
+            </div><!-- End Part right -->
         </div>
     </section>
 

@@ -4,4 +4,7 @@ such as name, address, LinkedIn profile link, work experience, and education.
 Built with Bootstrap for responsive layout and styling, it's perfect for job seekers and professionals
 looking for a quick and easy way to create a polished CV.
 
-//
+// To do in Project
+* add a button to delete experience, education, skills
+* add googles API to get auto fill for address by entering postcode
+* add a footer and in the footer describe the website and mention that you used an API
