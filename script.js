@@ -91,22 +91,22 @@ submitForm.addEventListener('click', () => {
     objectiveOut.innerText = objectiveIn.value;
 
     // updating experience title, description
-    // const experienceTitleIn = document.querySelectorAll('.experienceTitleIn');
-    // const experienceTitleOut = document.querySelector('.experienceTitleOut');
-    // const experienceDesIn = document.querySelectorAll('.experienceDesIn');
-    // const experienceDesOut = document.querySelector('.experienceDesOut');
+    const experienceTitleIn = document.querySelectorAll('.experienceTitleIn');
+    const experienceTitleOut = document.querySelector('.experienceTitleOut');
+    const experienceDesIn = document.querySelectorAll('.experienceDesIn');
+    const experienceDesOut = document.querySelector('.experienceDesOut');
     
-    // let titleStorage = '';
-    // let desStorage = '';
+    let titleStorage = '';
+    let desStorage = '';
     
-    // for (let i = 0; i < experienceTitleIn.length; i++) {
-    //   const title = experienceTitleIn[i].value;
-    //   const des = experienceDesIn[i].value;
-    //   titleStorage += `<h6 class="experienceTitleOut">${title}</h6><p class="experienceDesOut">${des}</p>`;
-    // }
+    for (let i = 0; i < experienceTitleIn.length; i++) {
+      const title = experienceTitleIn[i].value;
+      const des = experienceDesIn[i].value;
+      titleStorage += `<h6 class="experienceTitleOut">${title}</h6><p class="experienceDesOut">${des}</p>`;
+    }
     
-    // experienceTitleOut.innerHTML = titleStorage;
-    // experienceDesOut.innerHTML = desStorage;
+    experienceTitleOut.innerHTML = titleStorage;
+    experienceDesOut.innerHTML = desStorage;
     
     
     
