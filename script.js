@@ -5,8 +5,8 @@ const experienceFormEl = document.querySelector('#experienceForm');
 addExperienceBtn.addEventListener('click', () => {
     const newExperience = document.createElement('div');
     newExperience.innerHTML = `
-    <input type="text" class="form-control mb-3 mt-3" placeholder="Job title">
-    <textarea class="form-control" rows="3" placeholder="Job description"></textarea>
+    <input type="text" class="form-control mb-3 mt-3 experienceTitleIn" placeholder="Job title">
+    <textarea class="form-control experienceDesIn" rows="3" placeholder="Job description"></textarea>
     `;
 
     experienceFormEl.appendChild(newExperience);
@@ -90,15 +90,36 @@ submitForm.addEventListener('click', () => {
     const objectiveOut = document.querySelector('#objectiveOut');
     objectiveOut.innerText = objectiveIn.value;
 
-    // updating experience title
-    const experienceTitleIn = document.querySelector('.experienceTitleIn');
-    const experienceTitleOut = document.querySelector('.experienceTitleOut');
-    experienceTitleOut.innerText = experienceTitleIn.value;
+    // updating experience title, description
+    // const experienceTitleIn = document.querySelectorAll('.experienceTitleIn');
+    // const experienceTitleOut = document.querySelector('.experienceTitleOut');
+    // const experienceDesIn = document.querySelectorAll('.experienceDesIn');
+    // const experienceDesOut = document.querySelector('.experienceDesOut');
+    
+    // let titleStorage = '';
+    // let desStorage = '';
+    
+    // for (let i = 0; i < experienceTitleIn.length; i++) {
+    //   const title = experienceTitleIn[i].value;
+    //   const des = experienceDesIn[i].value;
+    //   titleStorage += `<h6 class="experienceTitleOut">${title}</h6><p class="experienceDesOut">${des}</p>`;
+    // }
+    
+    // experienceTitleOut.innerHTML = titleStorage;
+    // experienceDesOut.innerHTML = desStorage;
+    
+    
+    
 
-    // updating experience description
-    const experienceDesIn = document.querySelector('.experienceDesIn');
-    const experienceDesOut = document.querySelector('.experienceDesOut');
-    experienceDesOut.innerHTML = experienceDesIn.value; // used innerHTML instead of innerText
+
+
+
+
+
+
+
+
+
 
     // updating education title
     const educationTitleIn = document.querySelector('.educationTitleIn');

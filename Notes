@@ -1,10 +1,25 @@
-Project description
-A mobile-first website that generates a professional-looking CV in real-time using inputs
-such as name, address, LinkedIn profile link, work experience, and education.
-Built with Bootstrap for responsive layout and styling, it's perfect for job seekers and professionals
-looking for a quick and easy way to create a polished CV.
-
 // To do in Project
+* add Ul Li to skills section
+* make the add experience/education button add stuff to the generated CV
 * add a button to delete experience, education, skills
 * add googles API to get auto fill for address by entering postcode
 * add a footer and in the footer describe the website and mention that you used an API
+* add in footer instead of your name => View this project on github 'repository link'
+
+// copied code
+const experienceTitleIn = document.querySelectorAll('.experienceTitleIn');
+const experienceTitleOut = document.querySelector('.experienceTitleOut');
+const experienceDesIn = document.querySelectorAll('.experienceDesIn');
+const experienceDesOut = document.querySelector('.experienceDesOut');
+
+let titleStorage = '';
+let desStorage = '';
+
+for (let i = 0; i < experienceTitleIn.length; i++) {
+  const title = experienceTitleIn[i].value;
+  const des = experienceDesIn[i].value;
+  titleStorage += `<h6 class="experienceTitleOut">${title}</h6><p class="experienceDesOut">${des}</p>`;
+}
+
+experienceTitleOut.innerHTML = titleStorage;
+experienceDesOut.innerHTML = desStorage;
