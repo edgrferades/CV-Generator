@@ -32,15 +32,19 @@
         text-align: center;
         margin: 40px;
 
-        .objective{
+        .objective {
             text-align: left;
         }
 
-        .experience, .education, .skills{
+        .experience, .education, .skills {
             text-align: left;
 
-            .TitleNDes{
+            .TitleNDes {
                 text-align: left;
+            }
+
+            ul {
+                list-style: none;
             }
         }
     }

@@ -44,3 +44,6 @@
 #outputTemplate .container .experience .TitleNDes, #outputTemplate .container .education .TitleNDes, #outputTemplate .container .skills .TitleNDes {
   text-align: left;
 }
+#outputTemplate .container .experience ul, #outputTemplate .container .education ul, #outputTemplate .container .skills ul {
+  list-style: none;
+}

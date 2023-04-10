@@ -97,7 +97,7 @@
                             </div>
                             <!-- End Experience -->
 
-                            <!-- Education -->
+                            <!-- Education --> <!-- In -->
                             <div id="EducationForm"> 
                                 <label for="educationIn" class="form-label">Education</label>
                                 <input type="text" class="form-control mb-3 educationTitleIn" placeholder="Course title">
@@ -107,9 +107,9 @@
                             <div class="col-12">
                                 <button type="button" class="btn btn-primary" id="addEducation">Add education</button>
                             </div>
-                            <!-- End Education -->
+                            <!-- End Education --> <!-- In -->
 
-                            <!-- Skills -->
+                            <!-- Skills --> <!-- In -->
                                 <div id="skills">
                                     <label for="skillsIn" class="form-label">Skills</label>
                                     <input type="text" class="form-control mb-3 skillsIn" placeholder="Add a skill">
@@ -118,7 +118,7 @@
                                 <div class="col-12">
                                     <button type="button" class="btn btn-primary" id="addSkills">Add Skills</button>
                                 </div>
-                            <!-- End Skills -->
+                            <!-- End Skills --> <!-- In -->
 
                         </form>
                     </div><!-- Part right -->
@@ -134,6 +134,7 @@
 
     <section id="outputTemplate">
         <div class="container">
+            
 
             <div><!-- Part left -->
                 <div class="title">
@@ -141,11 +142,11 @@
                 </div>
     
                 <div class="address">
-                    <p><span id="addressOut">1234 Main St</span>, <span id="cityOut">Sample City</span>, <span id="postCodeOut">AB1 23CD</span> | <span id="phoneNumberOut">01234567890</span></p>
+                    <p><span id="addressOut">1234 Main St</span><span id="cityOut">, Sample City</span><span id="postCodeOut">, AB1 23CD</span> <span id="phoneNumberOut">| 01234567890</span></p>
                 </div>
     
                 <div class="emailNLinkedIn">
-                    <p><span id="emailOut">something@some.co.uk</span> | <span id="linkedinOut">LinkedIn profile URL</span></p>
+                    <p><span id="emailOut">something@some.co.uk</span> <span id="linkedinOut">| LinkedIn profile URL</span></p>
                 </div>
     
                 <hr>
@@ -156,7 +157,7 @@
             </div><!-- End Part left -->
 
             <div><!-- End Part right -->
-                <div class="experience">
+                <div class="experience"> <!-- Out -->
                     <h4>Experience</h4>
                     <div class="container TitleNDes">
                         <h6 class="experienceTitleOut">Experience title</h6>
@@ -164,7 +165,7 @@
                     </div>
                 </div>
 
-                <div class="education">
+                <div class="education"> <!-- Out -->
                     <h4>Education</h4>
                     <div class="container TitleNDes">
                         <h6 class="educationTitleOut">Education title</h6>
@@ -172,10 +173,19 @@
                     </div>
                 </div>
 
-                <div class="skills">
+                <div class="skills"> <!-- Out -->
                     <h4>Skills</h4>
                     <div class="container TitleNDes">
-                        <h6 class="skillsOut">Skill</h6>
+                        <h6 class="skillsOut">
+
+                            <ul class="row">
+                                <li class="col-sm-6 col-md-3">1</li>
+                                <li class="col-sm-6 col-md-3">2</li>
+                                <li class="col-sm-6 col-md-3">3</li>
+                                <li class="col-sm-6 col-md-3">4</li>
+                            </ul>
+
+                        </h6>
                     </div>
                 </div>
             </div><!-- End Part right -->

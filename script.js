@@ -20,9 +20,9 @@ const EducationFormEl = document.querySelector('#EducationForm');
 addEducationBtn.addEventListener('click', () => {
     const newEducation = document.createElement('div');
     newEducation.innerHTML = `
-    <input type="text" class="form-control mb-3 mt-3" placeholder="Course title">
-    <textarea class="form-control" rows="3" placeholder="Course description"></textarea>
-    `;
+    <input type="text" class="form-control mb-3 mt-3 educationTitleIn" placeholder="Course title">
+    <textarea class="form-control educationDesIn" rows="3" placeholder="Course description"></textarea>
+`;
 
     EducationFormEl.appendChild(newEducation);
 });
@@ -35,7 +35,7 @@ const skillsFormEl = document.querySelector('#skills');
 addSkillsBtn.addEventListener('click', () => {
     const newSkill = document.createElement('div');
     newSkill.innerHTML = `
-    <input type="text" class="form-control mb-3 mt-3" id="skills" placeholder="Add another skill">
+    <input type="text" class="form-control mb-3 mt-3 skillsIn" placeholder="Add another skill">
     `;
 
     skillsFormEl.appendChild(newSkill);
@@ -90,6 +90,9 @@ submitForm.addEventListener('click', () => {
     const objectiveOut = document.querySelector('#objectiveOut');
     objectiveOut.innerText = objectiveIn.value;
 
+
+
+
     // updating experience title, description
     const experienceTitleIn = document.querySelectorAll('.experienceTitleIn');
     const experienceTitleOut = document.querySelector('.experienceTitleOut');
@@ -107,32 +110,38 @@ submitForm.addEventListener('click', () => {
     
     experienceTitleOut.innerHTML = titleStorage;
     experienceDesOut.innerHTML = desStorage;
-    
-    
-    
 
 
 
 
-
-
-
-
-
-
-
-    // updating education title
-    const educationTitleIn = document.querySelector('.educationTitleIn');
+    // updating education title, description
+    const educationTitleIn = document.querySelectorAll('.educationTitleIn');
     const educationTitleOut = document.querySelector('.educationTitleOut');
-    educationTitleOut.innerText = educationTitleIn.value;
-
-    // updating education description
-    const educationDesIn = document.querySelector('.educationDesIn');
+    const educationDesIn = document.querySelectorAll('.educationDesIn');
     const educationDesOut = document.querySelector('.educationDesOut');
-    educationDesOut.innerHTML = educationDesIn.value; // used innerHTML instead of innerText
+    
+    let eduTitleStorage = '';
+    let eduDesStorage = '';
+    
+    for (let i = 0; i < educationTitleIn.length; i++) {
+        const title = educationTitleIn[i].value;
+        const des = educationDesIn[i].value;
+        eduTitleStorage += `<h6 class="educationTitleOut">${title}</h6><p class="educationDesOut">${des}</p>`;
+    }
+    
+    educationTitleOut.innerHTML = eduTitleStorage;
+    educationDesOut.innerHTML = eduDesStorage;
 
     // updating skills
-    const skillsIn = document.querySelector('.skillsIn');
+    const skillsIn = document.querySelectorAll('.skillsIn');
     const skillsOut = document.querySelector('.skillsOut');
-    skillsOut.innerText = skillsIn.value;
+    
+    let skillStorage = '';
+    
+    for (let i = 0; i < skillsIn.length; i++) {
+        const skill = skillsIn[i].value;
+        skillStorage += `<li class="col-sm-6 col-md-3"><h6 class="skillsOut">${skill}</h6></li>`;
+    }
+    
+    skillsOut.innerHTML = `<ul class="row">${skillStorage}</ul>`;
 });

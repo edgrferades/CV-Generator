@@ -1,10 +1,9 @@
 // To do in Project
 * add Ul Li to skills section
-* make the add experience/education button add stuff to the generated CV
+* add in footer, instead of your name => View this project on github 'repository link'
 * add a button to delete experience, education, skills
-* add googles API to get auto fill for address by entering postcode
-* add a footer and in the footer describe the website and mention that you used an API
-* add in footer instead of your name => View this project on github 'repository link'
+* add googles API to get auto fill for address by entering postcode, once done mention it in your project description
+* in the footer describe the website and mention that you used an API
 
 // copied code
 const experienceTitleIn = document.querySelectorAll('.experienceTitleIn');
