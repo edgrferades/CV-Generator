@@ -1,24 +1,5 @@
 // To do in Project
-* add Ul Li to skills section
 * add in footer, instead of your name => View this project on github 'repository link'
 * add a button to delete experience, education, skills
 * add googles API to get auto fill for address by entering postcode, once done mention it in your project description
 * in the footer describe the website and mention that you used an API
-
-// copied code
-const experienceTitleIn = document.querySelectorAll('.experienceTitleIn');
-const experienceTitleOut = document.querySelector('.experienceTitleOut');
-const experienceDesIn = document.querySelectorAll('.experienceDesIn');
-const experienceDesOut = document.querySelector('.experienceDesOut');
-
-let titleStorage = '';
-let desStorage = '';
-
-for (let i = 0; i < experienceTitleIn.length; i++) {
-  const title = experienceTitleIn[i].value;
-  const des = experienceDesIn[i].value;
-  titleStorage += `<h6 class="experienceTitleOut">${title}</h6><p class="experienceDesOut">${des}</p>`;
-}
-
-experienceTitleOut.innerHTML = titleStorage;
-experienceDesOut.innerHTML = desStorage;

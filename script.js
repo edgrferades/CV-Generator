@@ -145,3 +145,17 @@ submitForm.addEventListener('click', () => {
     
     skillsOut.innerHTML = `<ul class="row">${skillStorage}</ul>`;
 });
+
+const saveButton = document.getElementById('save');
+saveButton.addEventListener('click', () => {
+    const navbarEl = document.querySelector('#navbar');
+    navbarEl.style.display = 'none';    
+
+    const inputTemplateEl = document.querySelector('#inputTemplate');
+    inputTemplateEl.style.display = 'none';   
+
+    const save = document.querySelector('#save');
+    save.style.display = 'none';   
+
+    window.print();
+});

@@ -36,7 +36,9 @@
             text-align: left;
         }
 
-        .experience, .education, .skills {
+        .experience,
+        .education,
+        .skills {
             text-align: left;
 
             .TitleNDes {
@@ -45,6 +47,69 @@
 
             ul {
                 list-style: none;
+            }
+        }
+    }
+}
+
+.saveBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+#footer {
+    background-color: whitesmoke;
+    padding: 5rem 0 2.5rem 0;
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+    }
+
+    h4,
+    li a {
+        color: #333;
+    }
+
+    .socialIcon {
+        padding-top: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .socialItem {
+            display: inline-block;
+            margin: 0 10px;
+
+            img {
+                box-shadow: none;
             }
         }
     }

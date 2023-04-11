@@ -38,12 +38,108 @@
 #outputTemplate .container .objective {
   text-align: left;
 }
-#outputTemplate .container .experience, #outputTemplate .container .education, #outputTemplate .container .skills {
+#outputTemplate .container .experience,
+#outputTemplate .container .education,
+#outputTemplate .container .skills {
   text-align: left;
 }
-#outputTemplate .container .experience .TitleNDes, #outputTemplate .container .education .TitleNDes, #outputTemplate .container .skills .TitleNDes {
+#outputTemplate .container .experience .TitleNDes,
+#outputTemplate .container .education .TitleNDes,
+#outputTemplate .container .skills .TitleNDes {
   text-align: left;
 }
-#outputTemplate .container .experience ul, #outputTemplate .container .education ul, #outputTemplate .container .skills ul {
+#outputTemplate .container .experience ul,
+#outputTemplate .container .education ul,
+#outputTemplate .container .skills ul {
   list-style: none;
+}
+
+.saveBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+
+#footer {
+  background-color: whitesmoke;
+  padding: 5rem 0 2.5rem 0;
+}
+#footer footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#footer .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  text-align: center;
+}
+#footer .links > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+#footer .links li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+#footer h4,
+#footer li a {
+  color: #333;
+}
+#footer .socialIcon {
+  padding-top: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#footer .socialIcon .socialItem {
+  display: inline-block;
+  margin: 0 10px;
+}
+#footer .socialIcon .socialItem img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
