@@ -157,5 +157,8 @@ saveButton.addEventListener('click', () => {
     const save = document.querySelector('#save');
     save.style.display = 'none';   
 
+    const footer = document.querySelector('#footer');
+    footer.style.display = 'none'; 
+
     window.print();
 });
